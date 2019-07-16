@@ -1,0 +1,14 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  height: 100vh;
+  flex-direction: column;
+
+  .wrapper {
+    flex: 1 0 auto;
+  }
+
+	// _:-ms-lang(x)::-ms-backdrop, & {
+	// 	display: block;
+	// }
+}

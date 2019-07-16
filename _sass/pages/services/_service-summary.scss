@@ -1,0 +1,31 @@
+.service-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .service-image {
+    flex: 0 0 200px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .service-content {
+    align-self: stretch;
+    flex: 1 1 auto;
+    .service-title {
+      font-family: $font-family-heading;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    p {
+      color: $secondary;
+    }
+  }
+
+  // _:-ms-lang(x)::-ms-backdrop, & {
+  //   display: block;
+  // }
+}

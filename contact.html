@@ -1,0 +1,115 @@
+---
+title: Contact
+layout: default
+bodyClass: page-contact-list
+---
+
+<div class="intro intro-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>お問合せ</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <p>投票クラスタリングを利用を検討されている方は、ポリシーをご確認のうえ、</p>
+      <ul>
+        <li>実施を検討されているアンケートの基本情報</li>
+        {% if site.data.contact.address %}
+        <!-- <li><strong>Address: </strong>{{ site.data.contact.address }}</li> -->
+        {% endif %}
+      </ul>
+      <p>を記載したメールを送信してください。</p>
+      <strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
+            {{ site.data.contact.email }}</a>
+
+      <h4 class="mt-4">ポリシー</h4>
+      <p>
+        本プロジェクトは、サービスとして実施されているわけではないことをご了承ください。
+        我々は、投票クラスタリングの枠組みと、統計解析のさらなる開発を目的として、皆様のアンケート実施のご要望にお応えします。
+        したがって、我々はすべてのご要望にお応えできるわけではなく、より大規模で興味深いテーマのアンケートを優先させていただきます。 
+        また、商用目的に比べて、学術的・非営利目的のアンケートが優先されることをご了承ください。
+      </p>
+      <p>
+        しかしながら、基本的にはどんなタイプのアンケートも受け付けますので、どうぞお気軽にご連絡ください。  
+      </p>
+
+      <h4 class="mt-4">利用手順</h4>
+      <ol>
+        <li>メールにて基本情報を提出していただき、実施を検討します。</li>
+        <li>同意書に署名をいただきましたら、アンケート実施が決まります。</li>
+        <li>アンケート設問設定システムにて、設定ファイルを生成・提出していただきます。</li>
+        <li>後日、アンケートシステムから回答者の方々が回答できるようになります。</li>
+        <li>アンケートデータ収集後、解析結果をご連絡します。</li>
+      </ol>
+      <p>倫理委員会等の審査は、実施者側で承認を得てください。また、我々が提供するのはシステムとデータ解析だけですので、不特定多数からのアンケートを実施する場合は、各自モニター確保や宣伝をお願いします。</p>
+
+        <!--
+        <h4 class="mt-4">同意事項（概略）</h4>
+        <p>実際に利用される場合は、別途詳細な同意書の提出をお願いしております。</p>
+
+        <h5>収集されたデータの取り扱いについて</h5>
+        <p>
+          <i>投票クラスタリング</i>に送信されたデータの著作権は、我々に移行されます。
+          実施主催者のご要望があれば、生データを共有いたします。
+          また、実施主催者のご要望に応じて、生データを削除いたします。
+          実施主催者のご要望がない限り、我々は収集したデータを公開リポジトリに置き、世界中の人々が様々な用途で利用できるようにすることに同意されたものとみなします。
+        </p>
+
+        <h5>データ解析について</h5>
+        <p>
+          収集されたデータに対して、どの程度の統計解析を実行するかは、我々の判断によることをご了承ください。
+          解析手法のご提案は、歓迎いたします。
+        </p>
+
+        <h5>個人情報の取り扱いについて</h5>
+        <p>
+          我々は、<i>投票クラスタリング</i>には個人情報は投稿されないことを前提としています。
+        </p>
+        
+        <p>
+          我々は、投稿内容や解析結果に関する損害・トラブルの一切の責任を負いません。
+        </p>
+      </div>
+      -->
+
+      <h4 class="mt-4">実施を検討されているアンケートの基本情報</h4>
+      <table class="table table-sm opening-hours-table">
+        <tr>
+          <td class="day font-weight-bold">実施主催者のお名前</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">所属</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">連絡先（Eメール）</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">アンケートタイプ</td>
+          <td class="opens">学術的, 非営利, など。</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">アンケート期間</td>
+          <td class="opens">開始予定日と終了予定日</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">データと結果の取り扱い</td>
+          <td class="opens">オープンデータ, 一時的に非公開（+公開条件）, 非公開</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">目的</td>
+          <td class="opens">アンケートの目的を簡単にご説明ください。</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">アンケート対象者</td>
+          <td class="opens">一般大衆, 契約しているアンケート調査会社のモニター, 特定の組織内のメンバー, など。</td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+</div>

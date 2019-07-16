@@ -1,0 +1,11 @@
+<div id="main-menu" class="main-menu">
+  <ul>
+    <li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+    <li><a href="{{site.baseurl}}/services/" class="{% if page.url contains 'services' %}current{% endif %}">Details</a></li>
+    <li><a href="{{site.baseurl}}/contact/" class="{% if page.url contains 'contact' %}current{% endif %}">Contact Us</a></li>
+    <li><a href="https://voteclustering.org/">English</a></li>
+    <!--
+    <li><a href="{{site.baseurl}}/testimonials/" class="{% if page.url contains 'testimonials' %}current{% endif %}">Testimonials</a></li>
+	-->
+  </ul>
+</div>

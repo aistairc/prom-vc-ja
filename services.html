@@ -1,0 +1,111 @@
+---
+title: Details
+layout: default
+bodyClass: page-services-list
+---
+
+<div class="intro pb-6 pt-12">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>自由記述による多様な意見を取り込むことができるアンケートです</h1>
+        <!--
+        <p>
+          投票クラスタリングは、どんな場合のアンケートにも使うことができます。
+        </p>
+	    -->
+        <p>
+          投票クラスタリングでは、
+          <ul>
+          	<li>「どう思いますか？」のような質問（自由記述型）ができます。</li>
+          	<li>大規模アンケートデータを効率的に集計できます。</li>
+            <!--<li>各ユーザーが個人で使用するソフトウェアではありません。</li>-->
+            <!--<li>主に科学的裏付けを重要視する場合に有効です。</li>-->
+            <li>無料です。（CONTACT USの内容を参照）</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container pb-6">
+  <h2 class="title-4 text-dark mb-4">仕組み</h2>
+   <div class="row">
+    <div class="col-12 col-md-8">
+      <h4 class="mt-4">グラフベースのフレームワーク</h4>
+      <p>
+        回答者には、このフレームワークは普通のアンケートとあまり変わりがないように見えます。
+        提示されたいくつかの回答に対して賛成するかどうかを評価し、もしそのなかにぴったりの回答がなければ、自身の回答を書くだけです。
+      </p>
+      <p>
+        ここで重要なのは、回答者に提示される回答は、ランダムに抽出された他人の回答だということです。
+        このプロセスの記録は、意見のグラフ（ネットワーク）を構成し、
+        機械学習技術（グラフ分割アルゴリズム）が、このデータから統計的に類似した意見をまとめあげます。
+      </p>
+      <img class="service-image" src="/images/services/detail-fig_ja-S.svg" alt="opinion_graph">
+
+      <h4 class="mt-4">"ノンパラメトリック"なアンケート</h4>
+      <p>
+        このアンケートは、自由記述のような自由度の高い回答に対応できることが特徴です。
+        一方で、自由記述によって多様な回答が現れない場合は、単純な選択回答式アンケートのように機能します。
+        （この意味で、我々のアンケートは、"ノンパラメトリック"なのです。）
+        そのため、状況によって使い分ける必要はなく、このアンケートはいつでも使えます。
+      </p>
+      <h4 class="mt-4">民主的なアンケート</h4>
+      <p>
+        我々のアンケートの結果は<i>民主的</i>です。
+        集計者の独断的な類似度や出現単語等で決められる類似度に基づくものと異なり、ここでの回答の分類は、
+        回答者たち自身の判断に基づいています。
+      </p>
+      <h4 class="mt-4"></h4>
+      <p>
+        詳しくは、以下の論文を参照してください：
+        <blockquote>
+          Tatsuro Kawamoto and Takaaki Aoki, 
+          <a href="https://www.nature.com/articles/s42256-019-0071-y" target="_blank">"Democratic classification of free-format survey responses with a network-based framework," 
+          <i>Nature Machine Intelligence</i> (2019).</a>
+        </blockquote>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container pb-6">
+  <h2 class="title-4 text-dark mb-4">こんなときに使えます</h2>
+  <div class="row">
+    <div class="col-12 col-md-8">
+    <p>
+    	投票クラスタリングは、古典的なアンケートを包含しているため、
+    	基本的にどんな場合にも使用することができますが、特に以下の場合に効果的です。
+    </p>
+	  <ul>
+	  	<li>大規模な自由記述式アンケートを実施したい場合（例：「なぜあなたはベストを尽くさないのですか？」）</li>
+	  	<li>選択式アンケートでも十分だが、用意した選択肢が網羅的である保証がない場合（例：「あなたはいつ歯を磨きますか？」）</li>
+	  	<li>回答候補は有限だが大量にある場合（例：「嫌いな野菜は何ですか？」）</li>
+	  </ul>    
+   </div>
+  </div>
+</div>
+
+
+<div class="container pb-6">
+  <h2 class="title-4 text-dark mb-4">実装</h2>
+  <div class="row">
+    {% for service in site.services %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary pt-2">
+        <img class="service-image" src="{{ service.image }}">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
+          </h2>
+          {{ service.content | markdownify | strip_html | truncate: 200 }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

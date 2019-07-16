@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/images/favicon.png">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body class='page page-services-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    <li><a href="/" class="">Home</a></li>
+    <li><a href="/services/" class="current">Details</a></li>
+    <li><a href="/contact/" class="">Contact</a></li>
+    <li><a href="https://voteclustering.org/">English</a></li>
+<!--
+    <li><a href="/testimonials/" class="">Testimonials</a></li>
+    <li><a href="/team/" class="">Team</a></li>
+-->
+  </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header header-extra'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img alt="Figurit Homepage" src="/assets/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Figurit Homepage" src="/assets/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    <li><a href="/" class="">Home</a></li>
+    <li><a href="/services/" class="current">Details</a></li>
+    <li><a href="/contact/" class="">Contact Us</a></li>
+    <li><a href="https://voteclustering.org/">English</a></li>
+    <!--
+    <li><a href="/testimonials/" class="">Testimonials</a></li>
+	-->
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="intro pb-6 pt-12">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>自由記述による多様な意見を取り込むことができるアンケートです</h1>
+        <!--
+        <p>
+          投票クラスタリングは、どんな場合のアンケートにも使うことができます。
+        </p>
+	    -->
+        <p>
+          投票クラスタリングでは、
+          <ul>
+          	<li>「どう思いますか？」のような質問（自由記述型）ができます。</li>
+          	<li>大規模アンケートデータを効率的に集計できます。</li>
+            <!--<li>各ユーザーが個人で使用するソフトウェアではありません。</li>-->
+            <!--<li>主に科学的裏付けを重要視する場合に有効です。</li>-->
+            <li>無料です。（CONTACT USの内容を参照）</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container pb-6">
+  <h2 class="title-4 text-dark mb-4">仕組み</h2>
+   <div class="row">
+    <div class="col-12 col-md-8">
+      <h4 class="mt-4">グラフベースのフレームワーク</h4>
+      <p>
+        回答者には、このフレームワークは普通のアンケートとあまり変わりがないように見えます。
+        いくつかの回答を読み、賛成するかどうかを評価し、さらに自身の回答を書くだけです。
+      </p>
+      <p>
+        ここで重要なのは、回答者に提示される回答は、ランダムに抽出された他人の回答だということです。
+        このプロセスの記録は、意見のグラフ（ネットワーク）を構成し、
+        機械学習技術（グラフ分割アルゴリズム）が、このデータから統計的に類似した意見をまとめあげます。
+      </p>
+      <img class="service-image" src="/images/services/detail-fig_ja-S.svg" alt="opinion_graph">
+
+      <h4 class="mt-4">"ノンパラメトリック"なアンケート</h4>
+      <p>
+        このアンケートは、自由記述のような自由度の高い回答に対応できることが特徴です。
+        一方で、自由記述によって多様な回答が現れない場合は、単純な選択回答式アンケートのように機能します。
+        （この意味で、我々のアンケートは、"ノンパラメトリック"なのです。）
+        そのため、状況によって使い分ける必要はなく、このアンケートはいつでも使えます。
+      </p>
+      <h4 class="mt-4">民主的なアンケート</h4>
+      <p>
+        我々のアンケートの結果は<i>民主的</i>です。
+        集計者の独断的な類似度や出現単語等で決められる類似度に基づくものと異なり、ここでの回答の分類は、
+        回答者たち自身の判断に基づいています。
+      </p>
+      <h4 class="mt-4"></h4>
+      <p>
+        詳しくは、以下の論文を参照してください：
+        <blockquote>
+          Tatsuro Kawamoto and Takaaki Aoki, 
+          <a href="https://www.nature.com/articles/s42256-019-0071-y" target="_blank">"Democratic classification of free-format survey responses with a network-based framework," 
+          <i>Nature Machine Intelligence</i> (2019).</a>
+        </blockquote>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container pb-6">
+  <h2 class="title-4 text-dark mb-4">こんなときに使えます</h2>
+  <div class="row">
+    <div class="col-12 col-md-8">
+    <p>
+    	投票クラスタリングは、古典的なアンケートを包含しているため、
+    	基本的にどんな場合にも使用することができますが、特に以下の場合に効果的です。
+    </p>
+	  <ul>
+	  	<li>大規模な自由記述式アンケートを実施したい場合（例：「なぜあなたはベストを尽くさないのですか？」）</li>
+	  	<li>選択式アンケートでも十分だが、用意した選択肢が網羅的である保証がない場合（例：「あなたはいつ歯を磨きますか？」）</li>
+	  	<li>回答候補は有限だが大量にある場合（例：「嫌いな野菜は何ですか？」）</li>
+	  </ul>    
+   </div>
+  </div>
+</div>
+
+
+<div class="container pb-6">
+  <h2 class="title-4 text-dark mb-4">実装</h2>
+  <div class="row">
+    
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary pt-2">
+        <img class="service-image" src="/images/services/1_onlinesurvey.svg">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="/services/a_online-survey/">Online survey</a>
+          </h2>
+          投票クラスタリングの最もベーシックな形式は、ウェブアンケートです。
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary pt-2">
+        <img class="service-image" src="/images/services/2_offlinesurvey.svg">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="/services/b_offline-survey/">Offline survey</a>
+          </h2>
+          投票クラスタリングの機構は、オフライン環境でも実現することができます。
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary pt-2">
+        <img class="service-image" src="/images/services/3_vending machine.svg">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="/services/c_vending-machine/">The Vending Machine</a>
+          </h2>
+          現在企画中です。
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+  </div>
+  <div class="footer-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer">
+          <h3 class="footer-title">voteclustering</h3>
+          <ul class="footer-menu">
+            <li><a href="/">Home</a></li>
+            <!--<li><a href="/contact">Contact</a></li>-->
+            <li class="copyright">© voteclustering 2019</li>
+            <li class="logo"><a href="https://www.aist.go.jp/"><img src="/assets/images/logo-aist.svg"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="sub-footer-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer">
+          <ul>
+            <li><strong>Maintained by: </strong>国立研究開発法人 産業技術総合研究所 人工知能研究センター（東京都江東区青海2丁目3-26）, 2019年7月14日更新</li>
+            <li><strong>Email: </strong><a href="mailto:request@voteclustering.org">
+                request@voteclustering.org</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

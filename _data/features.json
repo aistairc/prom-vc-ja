@@ -1,0 +1,17 @@
+[
+  {
+    "title": "新しいフレームワーク",
+    "description": "投票クラスタリングでは、自由記述を含むアンケートの効率的な集計が可能です。",
+    "image": "images/features/1_novelframework.svg"
+  },
+  {
+    "title": "設置は簡単",
+    "description": "投票クラスタリングの設置は、従来のアンケートと同じくらい簡単です。",
+    "image": "images/features/2_noadditionalefforts.svg"
+  },
+  {
+    "title": "回答者にも易しい",
+    "description": "投票クラスタリングへの回答方法は、古典的なアンケートと見た目には同じです。",
+    "image": "images/features/3_advancedanalysis.svg"
+  }
+]
