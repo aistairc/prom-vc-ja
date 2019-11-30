@@ -1,5 +1,7 @@
 # アイドルオタクは推しに年間いくら消費する？　～どのオタクが最強！？～
 
+Nov. 23, 2019 - Nov. 29, 2019
+
 ## Respondents summary
 Total num. of respondents = 82
 
