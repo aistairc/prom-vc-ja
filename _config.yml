@@ -1,4 +1,4 @@
-baseurl: ''
+baseurl: 'https://aistairc.github.io/prom-vc-ja'
 exclude: ['README.md']
 permalink: pretty
 title: 'voteclustering'
